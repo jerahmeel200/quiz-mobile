@@ -73,7 +73,7 @@ export default function QuizScreen() {
     setQuizState(prev => ({ ...prev, endTime }));
     
     // Navigate to results with quiz data
-    router.push({
+    router.navigate({
       pathname: '/results',
       params: {
         answers: JSON.stringify(quizState.answers),

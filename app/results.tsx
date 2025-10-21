@@ -137,17 +137,23 @@ export default function ResultsScreen() {
       {/* Action Buttons */}
       <View className="px-6 pb-8 pt-4 bg-white shadow-lg">
         <View className="space-y-3">
-          <Button
+          <View className='mb-2'>
+             <Button
           
             title="Take Quiz Again"
             variant="primary"
-            onPress={() => router.push('/quiz')}
+            onPress={() => router.navigate('/quiz')}
           />
-          <Button
+          </View>
+          <View>
+  <Button
             title="Back to Home"
             variant="outline"
-            onPress={() => router.push('/')}
+            onPress={() => router.navigate('/')}
           />
+          </View>
+         
+        
         </View>
       </View>
     </View>

@@ -8,7 +8,7 @@ const HomeScreen = () => {
 const router = useRouter();
 
 const startQuiz = () => {
-  router.push('/quiz');
+  router.navigate('/quiz');
 }
 
   return (
