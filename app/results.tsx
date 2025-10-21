@@ -84,10 +84,10 @@ export default function ResultsScreen() {
               {/* Score Circle */}
               <View className="items-center mb-8">
                 <View className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 justify-center items-center shadow-lg">
-                  <Text className="text-4xl font-bold text-white">
+                  <Text className="text-5xl font-bold text-blue-800">
                     {score}/{QUESTIONS.length}
                   </Text>
-                  <Text className="text-lg text-blue-100 mt-2">
+                  <Text className="text-3xl text-black mt-2">
                     {Math.round(percentage)}%
                   </Text>
                 </View>
@@ -138,6 +138,7 @@ export default function ResultsScreen() {
       <View className="px-6 pb-8 pt-4 bg-white shadow-lg">
         <View className="space-y-3">
           <Button
+          
             title="Take Quiz Again"
             variant="primary"
             onPress={() => router.push('/quiz')}

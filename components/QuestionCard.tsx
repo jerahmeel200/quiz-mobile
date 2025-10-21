@@ -64,7 +64,7 @@ export default function QuestionCard({
             key={index}
             onPress={() => !isReview && onAnswerSelect(index)}
             disabled={isReview}
-            className={`border-2 rounded-2xl p-4 transition-all ${getOptionStyle(index)}`}
+            className={`border-2 rounded-2xl p-4 transition-all mb-2 ${getOptionStyle(index)}`}
           >
             <Text className={`font-medium ${getTextStyle(index)}`}>
               {option}
